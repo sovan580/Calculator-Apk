@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvExpression"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:gravity="end"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        android:ellipsize="start"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:gravity="end"
+        android:maxLines="1"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:padding="15dp"
+        android:ellipsize="end"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/clear"
+                style="@style/ActionButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="CE"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/openBracket"
+                style="@style/ActionButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="("
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/closeBracket"
+                style="@style/ActionButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text=")"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/divide"
+                style="@style/ActionButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="/"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nine"
+                style="@style/NumberButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/eight"
+                style="@style/NumberButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/seven"
+                style="@style/NumberButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/multiply"
+                style="@style/ActionButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="*"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/six"
+                style="@style/NumberButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/five"
+                style="@style/NumberButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/four"
+                style="@style/NumberButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/minus"
+                style="@style/ActionButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/three"
+                style="@style/NumberButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/two"
+                style="@style/NumberButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/one"
+                style="@style/NumberButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/add"
+                style="@style/ActionButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/decimal"
+                style="@style/NumberButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="."
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/zero"
+                style="@style/NumberButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:id="@+id/backspace"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/numberButton"
+                android:gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/ic_backspace_black_24dp"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/equals"
+                style="@style/ActionButtonStyle"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:text="="
+                android:textColor="#fff" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
